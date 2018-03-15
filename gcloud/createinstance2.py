@@ -16,7 +16,7 @@ zone = 'us-east1-b'
 # what kind of machine is being requested and what should it's name be?
 # based on the machine type, we can derrive a name
 
-name = 'My First Project'
+name = 'My-First-Project'
 
 def list_instances(compute, project, zone):
     result = compute.instances().list(project=project, zone=zone).execute()
