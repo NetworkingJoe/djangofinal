@@ -10,13 +10,13 @@ from create_ldap import create_instance
 credentials = GoogleCredentials.get_application_default()
 compute = discovery.build('compute', 'v1', credentials=credentials)
 
-project = 'instructor-nti-300-2018'
+project = 'focused-outlook-191902'
 zone = 'us-east1-b'
 
 # what kind of machine is being requested and what should it's name be?
 # based on the machine type, we can derrive a name
 
-name = 'test3'
+name = 'My First Project'
 
 def list_instances(compute, project, zone):
     result = compute.instances().list(project=project, zone=zone).execute()
